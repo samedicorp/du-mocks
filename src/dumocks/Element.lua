@@ -158,7 +158,7 @@ function M:getClass()
     return self.elementClass
 end
 
---- The class of the element.
+--- The class of the element (deprecated).
 -- @treturn string The class name of the element.
 function M:getElementClass()
     return self.elementClass
