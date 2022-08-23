@@ -154,6 +154,12 @@ end
 
 --- The class of the element.
 -- @treturn string The class name of the element.
+function M:getClass()
+    return self.elementClass
+end
+
+--- The class of the element.
+-- @treturn string The class name of the element.
 function M:getElementClass()
     return self.elementClass
 end
@@ -231,6 +237,7 @@ function M:mockGetClosure()
     closure.getId = function() return self:getId() end
     closure.getMass = function() return self:getMass() end
     closure.getElementClass = function() return self:getElementClass() end
+    closure.getClass = function() return self:getClass() end
     closure.getRemainingRestorations = function() return self:getRemainingRestorations() end
     closure.getMaxRestorations = function() return self:getMaxRestorations() end
 
